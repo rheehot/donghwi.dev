@@ -34,9 +34,11 @@ class BlogPostTemplate extends React.Component {
                 ...scale(-1 / 5),
                 display: `block`,
                 marginBottom: rhythm(1),
+                color: `#868e96`,
               }}
             >
-              {post.frontmatter.date}
+              {post.frontmatter.date} •{" "}
+              {Math.ceil(post.fields.readingTime.minutes)}분 소요
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -96,8 +98,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY년 M월 D일")
         description
+      }
+      fields {
+        readingTime {
+          minutes
+        }
       }
     }
   }

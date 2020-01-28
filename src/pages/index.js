@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,6 +18,12 @@ class BlogIndex extends React.Component {
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const readingTime = Math.ceil(node.fields.readingTime.minutes)
+          const readingText =
+            "🍕".repeat(Math.ceil(readingTime / 5)) +
+            " " +
+            readingTime +
+            "분 소요"
           return (
             <article key={node.fields.slug}>
               <header>
@@ -26,11 +32,22 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link
+                    style={{
+                      ...scale(1.0),
+                      fontWeight: `bold`,
+                      color: `#343a40`,
+                      textDecoration: `none`,
+                      boxShadow: `none`,
+                    }}
+                    to={node.fields.slug}
+                  >
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
+                <small>
+                  {node.frontmatter.date} • {readingText}
+                </small>
               </header>
               <section>
                 <p
@@ -64,9 +81,14 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY년 M월 D일")
             title
             description
+          }
+          fields {
+            readingTime {
+              minutes
+            }
           }
         }
       }
