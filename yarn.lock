@@ -12209,10 +12209,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-noto-sans-kr@^0.0.63:
-  version "0.0.63"
-  resolved "https://registry.yarnpkg.com/typeface-noto-sans-kr/-/typeface-noto-sans-kr-0.0.63.tgz#d4396920dd4af659c2a78b66c57a7d6c1c517135"
-  integrity sha512-IH1WIjCxhOaTvWvq3+zezhnsOGlwZ9HFdIawVTdU5Dss1/GRp75VqsReKJqAMPD6EegOmzOSM38kIiqimcN8Dg==
+typeface-nanum-barun-gothic@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/typeface-nanum-barun-gothic/-/typeface-nanum-barun-gothic-1.0.0.tgz#ad1c245bee3cf174e68cb78de0c8ad2f13a9a65d"
+  integrity sha1-rRwkW+488XTmjLeN4MitLxOppl0=
+
+typeface-ubuntu-mono@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-ubuntu-mono/-/typeface-ubuntu-mono-0.0.72.tgz#3ecdb1dc90900522451c90661da7ae316a6fdb8b"
+  integrity sha512-l+Tt4NVCeceb42wNk3iev35xt3d+O3NxPtYq90k70OXjbtQtvUGDNaDB9uouJ1Y7Co0V6DgKHNS5S5ljBz9QRA==
 
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"

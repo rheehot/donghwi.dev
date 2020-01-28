@@ -1,4 +1,5 @@
 // custom typefaces
-import "typeface-noto-sans-kr"
+import "typeface-nanum-barun-gothic"
+import "typeface-ubuntu-mono"
 
 import "prismjs/themes/prism.css"

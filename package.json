@@ -30,7 +30,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-noto-sans-kr": "^0.0.63",
+    "typeface-nanum-barun-gothic": "^1.0.0",
+    "typeface-ubuntu-mono": "^0.0.72",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },

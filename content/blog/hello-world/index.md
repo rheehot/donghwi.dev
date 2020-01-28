@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: 동적 타입 시스템은 더 개방적인 시스템이 아닙니다
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 ---
