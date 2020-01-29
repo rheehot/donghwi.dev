@@ -53,6 +53,15 @@ class BlogPostTemplate extends React.Component {
             <Bio />
           </footer>
         </article>
+        <script
+          src="https://utteranc.es/client.js"
+          repo="suhdonghwi/donghwi.dev"
+          issue-term="og:title"
+          label="댓글"
+          theme="github-light"
+          crossorigin="anonymous"
+          async
+        ></script>
 
         <nav>
           <ul
