@@ -39,7 +39,7 @@ class BlogPostTemplate extends React.Component {
                 color: `#868e96`,
               }}
             >
-              {post.frontmatter.date} •{" "}
+              {post.frontmatter.date} • 약{" "}
               {Math.ceil(post.fields.readingTime.minutes)}분 소요
             </p>
           </header>
