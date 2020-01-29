@@ -1,0 +1,36 @@
+.post {
+  blockquote {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    border-left: 5px solid #f06595;
+    color: #495057;
+    background-color: #f1f3f5;
+  }
+
+  .gatsby-highlight {
+    pre {
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+
+      code {
+        font-family: "Ubuntu Mono", "Noto Sans KR", monospace;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .footnotes {
+    p {
+      display: inline;
+    }
+
+    .footnote-backref {
+      margin-left: 0.2rem;
+    }
+  }
+}
