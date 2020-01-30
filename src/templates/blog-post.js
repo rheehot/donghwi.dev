@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
+import ReactUtterences from "react-utterances"
+
 import "../styles/blog-post.scss"
 
 class BlogPostTemplate extends React.Component {
@@ -52,16 +54,12 @@ class BlogPostTemplate extends React.Component {
           <footer>
             <Bio />
           </footer>
+          <ReactUtterences
+            repo="suhdonghwi/donghwi.dev"
+            type="og:title"
+            label="댓글"
+          />
         </article>
-        <script
-          src="https://utteranc.es/client.js"
-          repo="suhdonghwi/donghwi.dev"
-          issue-term="og:title"
-          label="댓글"
-          theme="github-light"
-          crossorigin="anonymous"
-          async
-        ></script>
 
         <nav>
           <ul

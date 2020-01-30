@@ -37,7 +37,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(0.5),
       }}
     >
       <Image
@@ -54,7 +54,8 @@ const Bio = () => {
         }}
       />
       <p>
-        저, <strong>{author}</strong>는 프로그래밍을 좋아하는 대한민국의 학생입니다! 특히 함수형 프로그래밍에 관심이 많습니다.
+        저, <strong>{author}</strong>는 프로그래밍을 좋아하는 대한민국의
+        학생입니다! 특히 함수형 프로그래밍에 관심이 많습니다.
         {` `}
         <a href={`https://github.com/${social.github}`}>
           제 깃허브도 구경해보세요.

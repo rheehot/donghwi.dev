@@ -34,6 +34,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "react-utterances": "^0.6.4",
     "typeface-nanum-barun-gothic": "^1.0.0",
     "typeface-ubuntu-mono": "^0.0.72",
     "typography": "^0.16.19",
